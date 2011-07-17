@@ -4,3 +4,6 @@ Twitter.configure do |config|
   config.oauth_token = CONFIG['twitter']['oauth_token']
   config.oauth_token_secret = CONFIG['twitter']['oauth_token_secret']
 end
+
+# Leave the twitter client instantiated
+TWITTER_CLIENT = Twitter::Client.new

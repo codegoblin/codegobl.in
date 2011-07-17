@@ -50,6 +50,10 @@ $$$        $$$,     $$$ $$,    $$ $$""""
 
     <div id="content_right">
       <p>Twitter Feed (@codegoblin):</p>
+      <% @twitter_statuses.each do |status| %>
+        <p><%= render_twitter_date(status.created_at) %>:<br />
+        <%= status.text %><p>
+      <% end %>
     </div>
   </div>
 
