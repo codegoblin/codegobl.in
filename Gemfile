@@ -9,6 +9,7 @@ gem "sass", "~> 3.1.2"
 gem "twitter", "~> 1.6.0"
 
 group :development do
+  gem "heroku"
   gem "ruby-debug19", "~> 0.11.6", :require => 'ruby-debug'
 end
 
