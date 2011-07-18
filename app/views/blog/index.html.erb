@@ -28,8 +28,8 @@ $$$        $$$,     $$$ $$,    $$ $$""""
     <div id="about_me">
       <h2>Who am I?</h2>
       <p>
-        My name is Cody Johnston. I've been proramming Ruby (often in conjunction with Rails)
-        for about 2 years. Besides coding Rails applications as a dayjob, I am also working on an epic
+        My name is Cody Johnston. I've been proramming Ruby (most often in conjunction with Rails)
+        professionally for 2 years. Besides coding Rails applications as a dayjob, I am also working on an epic
         computer game written almost exclusively in Ruby.
       </p>
       <p><span class="bold">email:</span> cody@codegobl.in</p>
@@ -49,6 +49,7 @@ $$$        $$$,     $$$ $$,    $$ $$""""
 
 
     <div id="content_right">
+      <% # TODO: Replace the code in this div with one call to a presenter/renderer method %>
       <p>Twitter Feed (@codegoblin):</p>
       <% @twitter_statuses.each do |status| %>
         <p><%= render_twitter_date(status.created_at) %>:<br />
