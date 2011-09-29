@@ -7,3 +7,4 @@ tmp/
 *.swo
 *.swp
 .rvmrc
+.sass-cache/

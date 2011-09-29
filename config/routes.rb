@@ -2,6 +2,9 @@ CodeGoblinWeb::Application.routes.draw do
 
   root :to => "blog#index"
 
+  ##########
+  # Devise #
+  ##########
   devise_for :users
 
 
