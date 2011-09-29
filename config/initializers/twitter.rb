@@ -1,9 +1,11 @@
 Twitter.configure do |config|
-  config.consumer_key = CONFIG['twitter']['consumer_key']
-  config.consumer_secret = CONFIG['twitter']['consumer_secret']
-  config.oauth_token = CONFIG['twitter']['oauth_token']
-  config.oauth_token_secret = CONFIG['twitter']['oauth_token_secret']
+  twitter_config = Codegoblin::Config[:twitter]
+  config.consumer_key = twitter_config['consumer_key']
+  config.consumer_secret = twitter_config['consumer_secret']
+  config.oauth_token = twitter_config['oauth_token']
+  config.oauth_token_secret = twitter_config['oauth_token_secret']
 end
 
 # Leave the twitter client instantiated
+# TODO: Add this to Codegoblin module
 TWITTER_CLIENT = Twitter::Client.new

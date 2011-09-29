@@ -1,0 +1,26 @@
+development:
+  secret_token:
+  twitter:
+    consumer_key:
+    consumer_secret:
+    oauth_token:
+    oauth_token_secret:
+
+test: &test
+  secret_token:
+  twitter:
+    consumer_key:
+    consumer_secret:
+    oauth_token:
+    oauth_token_secret:
+
+cucumber:
+  <<: *test
+
+production:
+  secret_token:
+  twitter:
+    consumer_key:
+    consumer_secret:
+    oauth_token:
+    oauth_token_secret:

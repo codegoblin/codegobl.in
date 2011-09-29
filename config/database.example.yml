@@ -1,0 +1,35 @@
+# PostgreSQL. Versions 7.4 and 8.x are supported.
+
+# PROTIP: Configure bundler to install pg
+# correctly on Mac OS X LION with homebrew (run PRE 'bundle install'):
+#   bundle config build.pg --with-pg-config=/usr/local/bin/pg_config
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: codegoblin_development
+  pool: 5
+  username:
+  password:
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test: &test
+  adapter: postgresql
+  encoding: unicode
+  database: codegoblin_test
+  pool: 5
+  username:
+  password:
+
+cucumber:
+  <<: *test
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: codegoblin_production
+  pool: 5
+  username:
+  password:
