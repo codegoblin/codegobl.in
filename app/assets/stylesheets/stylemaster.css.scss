@@ -5,11 +5,9 @@ html {
   body {
     background-color: #000;
     color: #ffff00;
-    margin: 0 auto;
-    width: 1000px;
     font-family: 'courier';
 
-    span.bold { 
+    span.bold {
       font-weight: bold; 
       font-size:11px;
     }
@@ -17,8 +15,11 @@ html {
     pre { margin: 0; }
 
     #page_container {
+      width: 1000px;
+      display: block;
+      margin: 0 auto;
+
       #header {
-        
         margin: 10px 0 0 0;
         display: block;
         height: 200px;
@@ -35,13 +36,6 @@ html {
             margin: 0px 0 0 0;
             display:inline-block;
           }
-        }
-
-        pre.header_vertical_divider {
-          width: 5px;
-          float: left;
-          height: 200px;
-          margin: 0 0 0 1px;
         }
 
         #about_me {
@@ -82,23 +76,8 @@ html {
             text-align: center;
           }
         }
-        p.horizontal_header_divider {
-          text-align: left;
-          margin: -2px 0 0 0;
-          padding: 0;
-          display: block;
-          float: right;
-        }
       }
 
-      p.horizontal_section_divider {
-        text-align: left;
-        margin: -5px 0 0 0;
-        padding: 0;
-        display: inline-block;
-        float: left;
-      }
-      
       #goblin_radio {
         width: 998px;
         height: 20px;
@@ -111,16 +90,15 @@ html {
 
       #content {
         #content_left {
+          display: inline-block;
           float: left;
           width: 670px;
           min-height: 400px;
         }
-        pre.content_vertical_divider {
-          display: inline-block;
-          margin: 0 0 0 1px;
-        }
         #content_right {
-
+          display: inline-block;
+          width: 330px;
+          font-size: 10px;
         }
       }
 
