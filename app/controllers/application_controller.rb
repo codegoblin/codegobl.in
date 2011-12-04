@@ -9,4 +9,5 @@ class ApplicationController < ActionController::Base
   ###########
   # Methods #
   ###########
+
 end
