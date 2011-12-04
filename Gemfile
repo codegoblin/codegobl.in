@@ -17,7 +17,7 @@ end
 
 group :development do
   gem 'heroku',                 '2.8.4'
-  gem 'ruby-debug19',           '0.11.6', :require => 'ruby-debug'
+  gem 'ruby-debug19',           '0.11.6', require: 'ruby-debug'
 end
 
 group :test do

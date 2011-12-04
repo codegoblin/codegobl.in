@@ -6,6 +6,4 @@ Twitter.configure do |config|
   config.oauth_token_secret = twitter_config['oauth_token_secret']
 end
 
-# Leave the twitter client instantiated
-# TODO: Add this to Codegoblin module
-TWITTER_CLIENT = Twitter::Client.new
+TWITTER_CLIENT = Twitter::Client.new # Leave the twitter client instantiated
