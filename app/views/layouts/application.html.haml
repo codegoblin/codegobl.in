@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title CodeGoblin
+    %title codegobl.in
     = stylesheet_link_tag    "application", "stylemaster"
     = javascript_include_tag "application"
     = csrf_meta_tags
@@ -16,9 +16,13 @@
           %pre(class = "ascii_title")
             = preserve render_ascii_logo_rest
 
-      #flash
-        %p.notice= notice
-        %p.alert= alert
+      %hr
+
+      - unless flash.empty?
+        #flash
+          %p.notice= notice
+          %p.alert= alert
+        %hr
 
       = yield
 

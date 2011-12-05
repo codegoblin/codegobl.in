@@ -1,11 +1,15 @@
 #content
   %h2 Twitter Feed (@codegoblin):
   %ul
-    - @twitter_statuses.each do |status|
+    - @twitter_entries.each do |entry|
       %li
-        %h3= render_twitter_date(status.created_at) 
-        %p= status.text
+        %h3= render_entry_date(entry.created_at) 
+        %p= entry.text
   %h2 Github Feed (https://github.com/codegoblin):
   %ul
-    - @github_feed.entries.each do |entry|
-      entry
+    - @github_entries.each do |entry|
+      %li
+        %h3= render_entry_date(entry.updated)
+        %p= entry.title
+        %p
+          != entry.content
