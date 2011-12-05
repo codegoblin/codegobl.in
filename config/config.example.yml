@@ -17,7 +17,15 @@ test: &test
 cucumber:
   <<: *test
 
-# production:
+production:
+  secret_token:
+  twitter:
+    consumer_key:
+    consumer_secret:
+    oauth_token:
+    oauth_token_secret:
+
+# HEROKU:
 #   SECRET_TOKEN=
 #   TWITTER_CONSUMER_KEY=
 #   TWITTER_CONSUMER_SECRET=
