@@ -1,5 +1,9 @@
 #content
-  %h2 Twitter Feed (@codegoblin):
+
+  %a{href:"http://www.twitter.com/codegoblin"}
+    %img{style: "display:inline-block", src:"http://twitter-badges.s3.amazonaws.com/t_mini-a.png", alt:"Follow codegoblin on Twitter"}>
+  %h2{style: "display:inline-block"} Twitter Feed (@codegoblin):
+
   %ul
     - @twitter_entries.each do |entry|
       %li
