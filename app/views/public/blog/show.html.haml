@@ -1,17 +1,16 @@
 #content
-
+  %h2{style: "display:inline-block"} Twitter Feed
   %a{href:"http://www.twitter.com/codegoblin"}
-    %img{style: "display:inline-block", src:"http://twitter-badges.s3.amazonaws.com/t_mini-a.png", alt:"Follow codegoblin on Twitter"}>
-  %h2{style: "display:inline-block"} Twitter Feed (@codegoblin):
+    %img{class: "feed", style: "display:inline-block", src:"http://twitter-badges.s3.amazonaws.com/t_mini-a.png", alt:"Follow codegoblin on Twitter"}>
 
   %ul
     - @twitter_entries.each do |entry|
       %li
         %h3= render_entry_date(entry.created_at) 
         %p= entry.text
+  %h2{style: "display:inline-block"} Github Feed
   %a{href:"http://www.github.com/codegoblin"}
-    %img{style: "height:32px;width:32px;display:inline-block;", src:"http://gems.github.com/octocat.png", alt:"go to codegoblin's github"}>
-  %h2{style: "display:inline-block"} Github Feed (https://github.com/codegoblin):
+    %img{class: "feed", style: "height:32px;width:32px;display:inline-block;", src:"http://gems.github.com/octocat.png", alt:"go to codegoblin's github"}>
   %ul
     - @github_entries.each do |entry|
       %li

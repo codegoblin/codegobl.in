@@ -45,6 +45,10 @@ html {
       #content {
         display: inline-block;
         font-size: 10px;
+
+        img.feed {
+          margin-bottom: -4px;
+        }
       }
 
       #footer {
