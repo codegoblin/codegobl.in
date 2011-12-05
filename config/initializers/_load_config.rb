@@ -4,9 +4,8 @@ module Codegoblin
 
     def self.[](key)
       (@@config ||= HashWithIndifferentAccess.new(
-                      YAML.load_file(
-                        Rails.root.join('/config/', (Rails.env.production? ? "config.example.yml" : "config.yml")).to_s
-                      ))[Rails.env])[key]
+                      YAML.load_file(Rails.root.join('/config/config.yml').to_s)
+                    )[Rails.env])[key]
     end
   end
 end
