@@ -10,38 +10,15 @@
     #page_container
       #header
         #logo_area
+          %pre(class = "ascii_title")
+            = preserve render_ascii_logo_c
           = image_tag("codegoblin.png", id: "logo")
+          %pre(class = "ascii_title")
+            = preserve render_ascii_logo_rest
 
-          %pre(id = "ascii_title")
-            = preserve render_logo
-
-        %ul(id = "main_nav")
-          %li
-            %a(href = "") blog
-          %li
-            %a(href = "") projects
-          %li
-            %a(href = "") resume
-
-        #about_me
-          %h2 Who am I?
-          %p
-            My name is Cody Johnston. I've been proramming Ruby (most often in conjunction with Rails)
-            professionally for 2 years. Besides coding Rails applications as a dayjob, I am also working on an epic
-            computer game written almost exclusively in Ruby.
-          %p
-            %span(class = "bold") email:
-            cody@codegobl.in
-          %p
-            %span(class = "bold") github:
-            codegoblin
-          %p
-            %span(class = "bold") twitter:
-            codegoblin
-      #goblin_radio Goblin Radio - Click To Play
-
-      %p.notice= notice
-      %p.alert= alert
+      #flash
+        %p.notice= notice
+        %p.alert= alert
 
       = yield
 

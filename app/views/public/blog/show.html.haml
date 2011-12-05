@@ -1,11 +1,11 @@
 #content
-  #content_left
-    %p Blog Entries:
-
-  #content_right
-    %h2 Twitter Feed (@codegoblin):
-    %ul
+  %h2 Twitter Feed (@codegoblin):
+  %ul
     - @twitter_statuses.each do |status|
       %li
         %h3= render_twitter_date(status.created_at) 
         %p= status.text
+  %h2 Github Feed (https://github.com/codegoblin):
+  %ul
+    - @github_feed.entries.each do |entry|
+      entry

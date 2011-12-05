@@ -9,7 +9,7 @@ html {
 
     span.bold {
       font-weight: bold; 
-      font-size:11px;
+      font-size: 11px;
     }
 
     pre { margin: 0; }
@@ -20,86 +20,32 @@ html {
       margin: 0 auto;
 
       #header {
-        margin: 10px 0 0 0;
+        margin: 0 0 0 0;
         display: block;
-        height: 200px;
+        height: 50px;
 
         #logo_area {
-          margin-top: 0px;
-          width: 670px;
-          float: left;
+          width: 414px;
+          display: block;
+          margin: auto;
           img#logo {
             display: inline-block;
-            margin: 0 0 10px 20px;
+            margin: 0 -12px 0 -12px;
+            width: 39px;
+            height: 44px;
           }
-          pre#ascii_title {
-            margin: 0px 0 0 0;
-            display:inline-block;
-          }
-        }
-
-        #about_me {
-          float: right;
-          display: inline-block;
-          width: 320px;
-          h2 {
-            text-align: center;
-            font-size: 16px;
-            margin: -5px 0 0 0;
-          }
-          p {
-            font-size: 10px;
-            margin: 1px 0 0 0;
-            padding: 0px 10px;
+          pre.ascii_title {
+            margin: 0 0 0 0;
+            display: inline-block;
+            font-size: 6px;
           }
         }
-
-        ul#main_nav {
-          font-weight: bold;
-          display: inline-block;
-          list-style: none; 
-          padding: 0;
-          margin: 5px 0 6px 0;
-          padding: 0 0px 0 0;
-          float: right;
-          width: 320px;
-          
-          a { 
-            text-decoration: none;
-            color: #ffff00; 
-          }
-
-          li {
-            float: left;
-            margin: 0 6px;
-            width: 90px;
-            text-align: center;
-          }
-        }
-      }
-
-      #goblin_radio {
-        width: 998px;
-        height: 20px;
-        background-color: #FFF;
-        color: #000;  
-        text-align: center;
-        margin: 10px auto 2px auto;
-        padding: 0 0 5px 0;
       }
 
       #content {
-        #content_left {
-          display: inline-block;
-          float: left;
-          width: 670px;
-          min-height: 400px;
-        }
-        #content_right {
-          display: inline-block;
-          width: 330px;
-          font-size: 10px;
-        }
+        display: inline-block;
+        width: 330px;
+        font-size: 10px;
       }
 
       #footer {
