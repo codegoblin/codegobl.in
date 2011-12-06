@@ -1,10 +1,10 @@
 module Codegoblin
   class Config
     # TWITTER
-    NUM_TWEETS_SHOWN = 5
+    NUM_TWEETS_SHOWN = 8
 
     # GITHUB
-    NUM_GITHUB_ENTRIES_SHOWN = 5
+    NUM_GITHUB_ENTRIES_SHOWN = 4
     GITHUB_FEED_ADDRESS = "https://github.com/codegoblin.atom"
 
     # TUMBLR

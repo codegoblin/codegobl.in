@@ -7,8 +7,10 @@ html {
     color: GoldenRod;
     font-family: 'courier';
 
-    h2 {
+    h2, h3, h4, h5 {
       color: yellow;
+      font-size: 10px;
+      font-weight: normal;
     }
 
     hr {
@@ -34,11 +36,17 @@ html {
       #header {
         margin: 0 0 0 0;
         display: block;
-        height: 50px;
+
+        h2 {
+          display: block;
+          font-size: 11px;
+          text-align: center;
+          margin-top: 0;
+        }
 
         #logo_area {
           color: yellow;
-          width: 414px;
+          width: 395px;
           display: block;
           margin: auto;
           img#logo {
@@ -68,6 +76,11 @@ html {
             overflow: scroll;
           }
 
+          h3 {
+            font-weight: bold;
+            font-size: 14px;
+          }
+
           .feed-column {
             display: inline-block;
             float: left;
@@ -75,7 +88,7 @@ html {
             border-radius: 4px;
             width: 314px;
             padding: 5px;
-            min-height: 600px;
+            min-height: 650px;
           }
 
           #left-column {
