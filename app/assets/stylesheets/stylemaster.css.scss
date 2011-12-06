@@ -4,15 +4,27 @@ html {
 
   body {
     background-color: #000;
-    color: #ffff00;
+    color: GoldenRod;
     font-family: 'courier';
+
+    h2 {
+      color: yellow;
+    }
+
+    hr {
+      color: yellow;
+      background-color: yellow;
+      border: 1px solid yellow;
+    }
 
     span.bold {
       font-weight: bold; 
       font-size: 11px;
     }
 
-    pre { margin: 0; }
+    pre {
+      margin: 0;
+    }
 
     #page_container {
       width: 1000px;
@@ -25,6 +37,7 @@ html {
         height: 50px;
 
         #logo_area {
+          color: yellow;
           width: 414px;
           display: block;
           margin: auto;
@@ -43,11 +56,39 @@ html {
       }
 
       #content {
-        display: inline-block;
+        display: block;
         font-size: 10px;
 
         img.feed {
           margin-bottom: -3px;
+        }
+
+        #feed-container {
+          pre {
+            overflow: scroll;
+          }
+
+          .feed-column {
+            display: inline-block;
+            float: left;
+            border: 1px dashed yellow;
+            border-radius: 4px;
+            width: 314px;
+            padding: 5px;
+            min-height: 600px;
+          }
+
+          #left-column {
+            margin: 0 4px 0 3px;
+          }
+
+          #center-column {
+            margin: 0 4px 0 4px;
+          }
+
+          #right-column {
+            margin: 0 3px 0 4px;
+          }
         }
       }
 

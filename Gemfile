@@ -6,6 +6,7 @@ gem 'rails',                    '3.1.3'
 gem 'twitter',                  '2.0.1'
 gem 'haml-rails',               '0.3.4'
 gem 'jquery-rails',             '1.0.19'
+gem 'tumblr-rb',                '1.3.0'
 
 gem 'feedzirra', #TODO: Put exact version after 3.1 update
       git: "https://github.com/pauldix/feedzirra.git"
